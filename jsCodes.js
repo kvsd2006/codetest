@@ -7,10 +7,14 @@ window.onload = function() {
             updateSales(request.responseText);
         }
     };
+    alert("send start!");
     request.send(null);
+    alert("send end!");
+    alert(request.responseText);
 }
 function updateSales(responseText) {
     var salesDiv = document.getElementById("sales");
+    salesDiv.innerHTML = "writing data";
     salesDiv.innerHTML = responseText;
     alert(responseText);
     salesDiv.innerHTML = responseText;

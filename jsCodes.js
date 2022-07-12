@@ -12,4 +12,6 @@ window.onload = function() {
 function updateSales(responseText) {
     var salesDiv = document.getElementById("sales");
     salesDiv.innerHTML = responseText;
+    alert(responseText);
+    salesDiv.innerHTML = responseText;
 }
